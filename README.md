@@ -15,6 +15,7 @@ An end-to-end intelligent debugging pipeline that combines deterministic causal 
 │   │   └── debate_scanner.py      # Multi-agent debate (Prosecutor/Defender/Judge)
 │   ├── streamlit_app.py     # Interactive 9-stage dashboard (Azure GPT-4o)
 │   ├── output/              # Pipeline outputs (JSON)
+|   ├── requirements.txt     # Python dependencies
 │   └── README.md            # Package documentation
 ├── prfsm/                   # Target system: 32-module Python state machine
 │   ├── _runner.py           # Trace generator
