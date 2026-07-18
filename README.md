@@ -2,6 +2,8 @@
 
 An end-to-end intelligent debugging pipeline that combines deterministic causal graph construction, spectrum-based fault localization (Ochiai), multi-agent LLM debate, MCP integration, and human-in-the-loop review to diagnose deferred cascade failures in Python finite state machines.
 
+> **[▶ Watch the Demo](https://youtu.be/vNSs2gWqzzM)**
+
 ## Repository Structure
 
 ```
