@@ -107,7 +107,7 @@ trace.jsonl (pass + fail)
 ## Additional Entry Points
 
 ```bash
-# Interactive Streamlit Dashboard (real Azure GPT-4o, all 9 stages)
+# Interactive Streamlit Dashboard (GPT-4o, all 9 stages)
 python -m streamlit run streamlit_app.py --server.port 8502
 
 # LangGraph orchestrated pipeline (with conditional edges + fingerprint caching)
