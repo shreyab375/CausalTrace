@@ -1,0 +1,18 @@
+llm:
+  provider: "openai"
+  model: "gpt-4o"
+  temperature: 0.2
+  max_tokens: 4096
+
+pipeline:
+  contrastive_enabled: true
+  hierarchical_levels: [0, 1, 2]
+  min_ochiai_threshold: 0.3
+  max_hypotheses: 3
+  slicing_variable: "flurslex"
+  threshold: 16
+
+scanner:
+  min_for_arguments: 2
+  min_against_arguments: 2
+  batch_size: 5

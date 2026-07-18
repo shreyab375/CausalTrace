@@ -1,0 +1,19 @@
+======================================================================
+CAUSAL FAILURE CHAIN VISUALIZATION
+======================================================================
+
+assertion.failed: ctx["flurslex"] < 16 violated at reader entry
+└── flimblorx::slalslex observed ctx["flurslex"] == 10
+    (cycle=19, transition=slalslex->slalslex)
+
+Causal chain (writers in execution order):
+--------------------------------------------------
+  ├── [01] prelvonx::blanblimdrel mutated flurslex: 0 → 2 (cycle=1)
+  ├── [02] prelvonx::blanblimdrel mutated flurslex: 2 → 4 (cycle=5)
+  ├── [03] prelvonx::blanblimdrel mutated flurslex: 4 → 6 (cycle=9)
+  ├── [04] prelvonx::blanblimdrel mutated flurslex: 6 → 8 (cycle=13)
+  └── [05] prelvonx::blanblimdrel mutated flurslex: 8 → 10 (cycle=17)
+
+Total writers in chain: 5
+Final value at symptom: 10
+======================================================================
