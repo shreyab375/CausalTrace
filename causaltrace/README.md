@@ -2,6 +2,8 @@
 
 An end-to-end intelligent debugging pipeline that combines deterministic causal graph construction with LLM-guided suspicion analysis to diagnose deferred cascade failures in Python finite state machines.
 
+> **[▶ Watch the Demo](https://youtu.be/vNSs2gWqzzM)**
+> 
 ## Contributions
 
 1. **Contrastive Multi-Trace Analysis** — Spectrum-based (Ochiai) suspicion scoring by comparing passing vs. failing executions
