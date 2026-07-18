@@ -1,0 +1,384 @@
+{
+  "trace_id": "18ea4beb6f77",
+  "failure_node": "flimblorx::slalslex::ASSERT_FAIL@19",
+  "assertion": {
+    "failed": "err_budget",
+    "expected": "err_ct <= 4",
+    "actual": "err_ct == 5"
+  },
+  "slicing_variable": "flurslex",
+  "node_count": 11,
+  "edge_count": 10,
+  "nodes": [
+    {
+      "id": "flimblorx::slalslex::ASSERT_FAIL@19",
+      "node_type": "ASSERT_FAIL",
+      "mod": "flimblorx",
+      "state": "slalslex",
+      "cycle": 19,
+      "depth": 0,
+      "transition_id": "8ad63100",
+      "transition": "slalslex->slalslex",
+      "variables": {
+        "flurslex": 10,
+        "spenbranl": 0
+      },
+      "conditions": {
+        "sub_error": true,
+        "err_ct": 5
+      },
+      "inputs": {
+        "fault_hint": 2,
+        "sub": "prelvonx",
+        "span": "b68c61fb",
+        "ret": 2
+      },
+      "span": "b68c61fb",
+      "caller": null,
+      "val_before": null,
+      "val_after": 10,
+      "assertion": {
+        "failed": "err_budget",
+        "expected": "err_ct <= 4",
+        "actual": "err_ct == 5"
+      }
+    },
+    {
+      "id": "prelvonx::blanblimdrel::CTX_WRITE@17",
+      "node_type": "CTX_WRITE",
+      "mod": "prelvonx",
+      "state": "blanblimdrel",
+      "cycle": 17,
+      "depth": 1,
+      "transition_id": "d04abd91",
+      "transition": "blanblimdrel->grexbrulvix",
+      "variables": {
+        "flurslex": 10,
+        "spenbranl": 0
+      },
+      "conditions": {
+        "hint_branch": false,
+        "ctx_write": true,
+        "ctx_val_before": 8
+      },
+      "inputs": {
+        "hint": 2,
+        "span": "b68c61fb",
+        "caller": "slalslex"
+      },
+      "span": "b68c61fb",
+      "caller": "slalslex",
+      "val_before": 8,
+      "val_after": 10,
+      "assertion": "pass"
+    },
+    {
+      "id": "prelvonx::blanblimdrel::CTX_WRITE@13",
+      "node_type": "CTX_WRITE",
+      "mod": "prelvonx",
+      "state": "blanblimdrel",
+      "cycle": 13,
+      "depth": 1,
+      "transition_id": "d04abd91",
+      "transition": "blanblimdrel->grexbrulvix",
+      "variables": {
+        "flurslex": 8,
+        "spenbranl": 0
+      },
+      "conditions": {
+        "hint_branch": false,
+        "ctx_write": true,
+        "ctx_val_before": 6
+      },
+      "inputs": {
+        "hint": 2,
+        "span": "ebdc5d2b",
+        "caller": "slalslex"
+      },
+      "span": "ebdc5d2b",
+      "caller": "slalslex",
+      "val_before": 6,
+      "val_after": 8,
+      "assertion": "pass"
+    },
+    {
+      "id": "prelvonx::blanblimdrel::CTX_WRITE@9",
+      "node_type": "CTX_WRITE",
+      "mod": "prelvonx",
+      "state": "blanblimdrel",
+      "cycle": 9,
+      "depth": 1,
+      "transition_id": "d04abd91",
+      "transition": "blanblimdrel->grexbrulvix",
+      "variables": {
+        "flurslex": 6,
+        "spenbranl": 0
+      },
+      "conditions": {
+        "hint_branch": false,
+        "ctx_write": true,
+        "ctx_val_before": 4
+      },
+      "inputs": {
+        "hint": 2,
+        "span": "bef60816",
+        "caller": "slalslex"
+      },
+      "span": "bef60816",
+      "caller": "slalslex",
+      "val_before": 4,
+      "val_after": 6,
+      "assertion": "pass"
+    },
+    {
+      "id": "prelvonx::blanblimdrel::CTX_WRITE@5",
+      "node_type": "CTX_WRITE",
+      "mod": "prelvonx",
+      "state": "blanblimdrel",
+      "cycle": 5,
+      "depth": 1,
+      "transition_id": "d04abd91",
+      "transition": "blanblimdrel->grexbrulvix",
+      "variables": {
+        "flurslex": 4,
+        "spenbranl": 0
+      },
+      "conditions": {
+        "hint_branch": false,
+        "ctx_write": true,
+        "ctx_val_before": 2
+      },
+      "inputs": {
+        "hint": 2,
+        "span": "c69952b7",
+        "caller": "slalslex"
+      },
+      "span": "c69952b7",
+      "caller": "slalslex",
+      "val_before": 2,
+      "val_after": 4,
+      "assertion": "pass"
+    },
+    {
+      "id": "prelvonx::blanblimdrel::CTX_WRITE@1",
+      "node_type": "CTX_WRITE",
+      "mod": "prelvonx",
+      "state": "blanblimdrel",
+      "cycle": 1,
+      "depth": 1,
+      "transition_id": "d04abd91",
+      "transition": "blanblimdrel->grexbrulvix",
+      "variables": {
+        "flurslex": 2,
+        "spenbranl": 0
+      },
+      "conditions": {
+        "hint_branch": false,
+        "ctx_write": true,
+        "ctx_val_before": 0
+      },
+      "inputs": {
+        "hint": 2,
+        "span": "19f41d93",
+        "caller": "slalslex"
+      },
+      "span": "19f41d93",
+      "caller": "slalslex",
+      "val_before": 0,
+      "val_after": 2,
+      "assertion": "pass"
+    },
+    {
+      "id": "flimblorx::slalslex::SUB_INVOKE@0",
+      "node_type": "SUB_INVOKE",
+      "mod": "flimblorx",
+      "state": "slalslex",
+      "cycle": 0,
+      "depth": 0,
+      "transition_id": "ce292b50",
+      "transition": "slalslex->invoke:prelvonx",
+      "variables": {
+        "flurslex": 0,
+        "spenbranl": 0
+      },
+      "conditions": {},
+      "inputs": {
+        "fault_hint": 2,
+        "sub": "prelvonx",
+        "span": "19f41d93",
+        "hint": 2
+      },
+      "span": "19f41d93",
+      "caller": null,
+      "val_before": null,
+      "val_after": null,
+      "assertion": "pass"
+    },
+    {
+      "id": "flimblorx::slalslex::SUB_INVOKE@4",
+      "node_type": "SUB_INVOKE",
+      "mod": "flimblorx",
+      "state": "slalslex",
+      "cycle": 4,
+      "depth": 0,
+      "transition_id": "ce292b50",
+      "transition": "slalslex->invoke:prelvonx",
+      "variables": {
+        "flurslex": 2,
+        "spenbranl": 0
+      },
+      "conditions": {},
+      "inputs": {
+        "fault_hint": 2,
+        "sub": "prelvonx",
+        "span": "c69952b7",
+        "hint": 2
+      },
+      "span": "c69952b7",
+      "caller": null,
+      "val_before": null,
+      "val_after": null,
+      "assertion": "pass"
+    },
+    {
+      "id": "flimblorx::slalslex::SUB_INVOKE@8",
+      "node_type": "SUB_INVOKE",
+      "mod": "flimblorx",
+      "state": "slalslex",
+      "cycle": 8,
+      "depth": 0,
+      "transition_id": "ce292b50",
+      "transition": "slalslex->invoke:prelvonx",
+      "variables": {
+        "flurslex": 4,
+        "spenbranl": 0
+      },
+      "conditions": {},
+      "inputs": {
+        "fault_hint": 2,
+        "sub": "prelvonx",
+        "span": "bef60816",
+        "hint": 2
+      },
+      "span": "bef60816",
+      "caller": null,
+      "val_before": null,
+      "val_after": null,
+      "assertion": "pass"
+    },
+    {
+      "id": "flimblorx::slalslex::SUB_INVOKE@12",
+      "node_type": "SUB_INVOKE",
+      "mod": "flimblorx",
+      "state": "slalslex",
+      "cycle": 12,
+      "depth": 0,
+      "transition_id": "ce292b50",
+      "transition": "slalslex->invoke:prelvonx",
+      "variables": {
+        "flurslex": 6,
+        "spenbranl": 0
+      },
+      "conditions": {},
+      "inputs": {
+        "fault_hint": 2,
+        "sub": "prelvonx",
+        "span": "ebdc5d2b",
+        "hint": 2
+      },
+      "span": "ebdc5d2b",
+      "caller": null,
+      "val_before": null,
+      "val_after": null,
+      "assertion": "pass"
+    },
+    {
+      "id": "flimblorx::slalslex::SUB_INVOKE@16",
+      "node_type": "SUB_INVOKE",
+      "mod": "flimblorx",
+      "state": "slalslex",
+      "cycle": 16,
+      "depth": 0,
+      "transition_id": "ce292b50",
+      "transition": "slalslex->invoke:prelvonx",
+      "variables": {
+        "flurslex": 8,
+        "spenbranl": 0
+      },
+      "conditions": {},
+      "inputs": {
+        "fault_hint": 2,
+        "sub": "prelvonx",
+        "span": "b68c61fb",
+        "hint": 2
+      },
+      "span": "b68c61fb",
+      "caller": null,
+      "val_before": null,
+      "val_after": null,
+      "assertion": "pass"
+    }
+  ],
+  "edges": [
+    {
+      "source": "prelvonx::blanblimdrel::CTX_WRITE@17",
+      "target": "flimblorx::slalslex::ASSERT_FAIL@19",
+      "edge_type": "DATA_FLOW",
+      "variable": "flurslex"
+    },
+    {
+      "source": "prelvonx::blanblimdrel::CTX_WRITE@13",
+      "target": "prelvonx::blanblimdrel::CTX_WRITE@17",
+      "edge_type": "DATA_FLOW",
+      "variable": "flurslex"
+    },
+    {
+      "source": "prelvonx::blanblimdrel::CTX_WRITE@9",
+      "target": "prelvonx::blanblimdrel::CTX_WRITE@13",
+      "edge_type": "DATA_FLOW",
+      "variable": "flurslex"
+    },
+    {
+      "source": "prelvonx::blanblimdrel::CTX_WRITE@5",
+      "target": "prelvonx::blanblimdrel::CTX_WRITE@9",
+      "edge_type": "DATA_FLOW",
+      "variable": "flurslex"
+    },
+    {
+      "source": "prelvonx::blanblimdrel::CTX_WRITE@1",
+      "target": "prelvonx::blanblimdrel::CTX_WRITE@5",
+      "edge_type": "DATA_FLOW",
+      "variable": "flurslex"
+    },
+    {
+      "source": "flimblorx::slalslex::SUB_INVOKE@0",
+      "target": "prelvonx::blanblimdrel::CTX_WRITE@1",
+      "edge_type": "CONTROL_FLOW",
+      "variable": null
+    },
+    {
+      "source": "flimblorx::slalslex::SUB_INVOKE@4",
+      "target": "prelvonx::blanblimdrel::CTX_WRITE@5",
+      "edge_type": "CONTROL_FLOW",
+      "variable": null
+    },
+    {
+      "source": "flimblorx::slalslex::SUB_INVOKE@8",
+      "target": "prelvonx::blanblimdrel::CTX_WRITE@9",
+      "edge_type": "CONTROL_FLOW",
+      "variable": null
+    },
+    {
+      "source": "flimblorx::slalslex::SUB_INVOKE@12",
+      "target": "prelvonx::blanblimdrel::CTX_WRITE@13",
+      "edge_type": "CONTROL_FLOW",
+      "variable": null
+    },
+    {
+      "source": "flimblorx::slalslex::SUB_INVOKE@16",
+      "target": "prelvonx::blanblimdrel::CTX_WRITE@17",
+      "edge_type": "CONTROL_FLOW",
+      "variable": null
+    }
+  ]
+}
