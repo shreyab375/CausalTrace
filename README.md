@@ -1,7 +1,5 @@
 # CausalTrace — LLM-Driven Debugging of Python State Machines
 
-> Micron AI Staff Engineer Take-Home (JR97592)
-
 An end-to-end intelligent debugging pipeline that combines deterministic causal graph construction, spectrum-based fault localization (Ochiai), multi-agent LLM debate, MCP integration, and human-in-the-loop review to diagnose deferred cascade failures in Python finite state machines.
 
 ## Repository Structure
@@ -21,10 +19,8 @@ An end-to-end intelligent debugging pipeline that combines deterministic causal 
 ├── prfsm/                   # Target system: 32-module Python state machine
 │   ├── _runner.py           # Trace generator
 │   └── trace.jsonl          # Execution traces (pass + fail)
-├── TECHNICAL_REPORT.md      # Full technical report with formal algorithms
-├── DEMO_SCRIPT.md           # 4-minute demo walkthrough (9 stages)
-├── EXPLAINED_SIMPLY.md      # Non-technical explanation
-└── *.svg                    # Architecture diagrams
+├── Technical Report_ShreyaB.pdf     # Full technical report with formal algorithms
+
 ```
 
 ## Quick Start
@@ -44,13 +40,10 @@ python -m streamlit run streamlit_app.py --server.port 8502
 
 - **100% classification accuracy** with GPT-4o: 5 ROOT_CAUSE, 1 SYMPTOM, 5 NORMAL — all correct
 - **3 fault-exclusive transitions** (Ochiai = 1.0) identified via contrastive analysis
-- **59-second** end-to-end pipeline execution with real Azure GPT-4o
+- **59-second** end-to-end pipeline execution with GPT-4o
 
 ## Documentation
 
 | Document | Description |
 |----------|-------------|
-| [Technical Report](TECHNICAL_REPORT.md) | Full report with formal algorithms, architecture, and evaluation |
-| [Demo Script](DEMO_SCRIPT.md) | 4-minute guided walkthrough of all 9 pipeline stages |
-| [Explained Simply](EXPLAINED_SIMPLY.md) | Non-technical explanation of the approach |
-| [CausalTrace README](causaltrace/README.md) | Package-level documentation, configuration, and entry points |
+| [Technical Report] | Full report with formal algorithms, architecture, and evaluation |
